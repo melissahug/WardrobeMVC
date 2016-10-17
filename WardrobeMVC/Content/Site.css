@@ -1,0 +1,43 @@
+﻿#coverBody {
+    background-image: url('images/coverPic.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.logoFont {
+    font-family: Sacramento;
+    font-size:88px;
+    margin-top:145px;
+    font-weight:bold;
+}
+#coverLink {
+    text-decoration:none;
+    font-size:36px;
+    color: black;
+    font-family: Proza Libre;
+}
+
+#bs-example-navbar-collapse-1 {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
