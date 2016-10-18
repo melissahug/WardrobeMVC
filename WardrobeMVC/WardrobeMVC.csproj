@@ -247,12 +247,28 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\images\coverPic.jpg" />
-    <Content Include="Content\images\thumbs.jpg" />
+    <Content Include="images\BlackPlatform.jpg" />
+    <Content Include="images\buttonShirt.jpg" />
+    <Content Include="images\Closet.jpg" />
+    <Content Include="images\Earrings.jpg" />
+    <Content Include="images\Earrings2.jpg" />
+    <Content Include="images\heels.jpg" />
+    <Content Include="images\coverPic.jpg" />
+    <Content Include="images\High5.jpg" />
+    <Content Include="images\Jeans.jpg" />
+    <Content Include="images\LowPump.jpg" />
+    <Content Include="images\necklace.jpg" />
+    <Content Include="images\Peach.jpg" />
+    <Content Include="images\skinnyjeans.jpg" />
+    <Content Include="images\TanBoot.jpg" />
+    <Content Include="images\tennisShoe.jpg" />
+    <Content Include="images\thumbs.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\Twitter.PNG" />
+    <Content Include="images\WeOut.jpg" />
     <Content Include="Models\Closet.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Closet.edmx</DependentUpon>

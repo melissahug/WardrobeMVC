@@ -1,10 +1,10 @@
 ﻿@model WardrobeMVC.Models.Accessory
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Been shopping for new accessories, I see!";
 }
 
-<h2>Create</h2>
+<h2>@ViewBag.Title</h2>
 
 
 @using (Html.BeginForm()) 
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Accessory</h4>
+        <h4>Accessories</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -73,6 +73,9 @@
 
 <div>
     @Html.ActionLink("Back to List", "Index")
+</div>
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
 </div>
 
 @section Scripts {

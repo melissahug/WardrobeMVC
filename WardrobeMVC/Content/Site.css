@@ -1,22 +1,54 @@
-﻿#coverBody {
-    background-image: url('images/coverPic.jpg');
+﻿/*Backgound for the Home Page ONLY*/
+#coverBody {
+    background-image: url('../images/coverPic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*BACKGROUND for the rest of the site*/
+body {
+    background-image: url('../images/Peach.jpg');
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
+
+/*Styling for "Melissa's Closet" ONLY*/
 .logoFont {
     font-family: Sacramento;
-    font-size:88px;
+    font-size:108px;
     margin-top:145px;
     font-weight:bold;
 }
+
+/*MEDIA FOOTER from Bootstrap with TwitterLogo*/
+#twitterLogo {
+        height: 25px;
+        margin-top:190px;   
+   }
+
+/*Resize for the images*/
+#picThumbnail {
+    height: 100px;
+}
+
+/*Styling for the two links on the Home page ONLY*/
 #coverLink {
-    text-decoration:none;
     font-size:36px;
     color: black;
+    background-color: rgba(0, 0, 0, .2);
     font-family: Proza Libre;
 }
 
+/*Styling font for Cover dropdown menu*/
+#coverBody li {
+    font-family: Proza Libre;
+}
+
+/*TwitterLogoo at the bdom of the page*/
+twitterLogo {
+        height: 50px;
+       
+}
 #bs-example-navbar-collapse-1 {
     margin-left: 0px;
     padding-left: 0px;

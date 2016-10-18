@@ -1,29 +1,10 @@
 ﻿@model WardrobeMVC.Models.Sho
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "New shoes!! Yes!!!!";
 }
 
-@{  WebImage photo = null;
-    var newFileName = "";
-    var imagePath = "";
-
-    if (IsPost)
-    {
-        photo = WebImage.GetImageFromRequest();
-        if (photo != null)
-        {
-            newFileName = Guid.NewGuid().ToString() + "_" +
-                Path.GetFileName(photo.FileName);
-            imagePath = @"~/Content/images/" + newFileName;
-
-            photo.Save(@"~\" + imagePath);
-        }
-    }
-}
-
-
-<h2>Create</h2>
+<h2>@ViewBag.Title</h2>
 
 
 @using (Html.BeginForm()) 
@@ -82,30 +63,6 @@
             </div>
         </div>
 
-        @*HTML for pic START*@
-        
-       <div>
-        
-            <form action="" method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <legend> Upload Image </legend>
-                    <label for="Image">Image</label>
-                    <input type="file" name="Image" />
-                    <br />
-                    <input type="submit" value="Upload" />
-                </fieldset>
-            </form>
-            <h1>Uploaded Image</h1>
-            @if (imagePath != "")
-            {
-                <div class="result">
-                    
-                    <img src="~/Content/images/" + newFileName alt="image"/>
-                </div>
-            }
-        </div>
-        
-        @*HTML pic END*@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -118,6 +75,9 @@
 
 <div>
     @Html.ActionLink("Back to List", "Index")
+</div>
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
 </div>
 
 @section Scripts {

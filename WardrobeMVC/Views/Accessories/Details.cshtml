@@ -55,7 +55,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Photo)
+            <img src="@Url.Content(@Model.Photo)" id="picThumbnail" />
         </dd>
 
     </dl>
@@ -64,3 +64,6 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
+</div>

@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<WardrobeMVC.Models.Top>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "See what's in your closet!";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -50,7 +50,7 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Photo)
+            <img src="@Url.Content(@item.Photo)" id="picThumbnail"/>
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
@@ -61,3 +61,6 @@
 }
 
 </table>
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
+</div>

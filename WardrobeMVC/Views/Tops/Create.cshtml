@@ -1,10 +1,10 @@
 ﻿@model WardrobeMVC.Models.Top
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Shirts, Tees and Blouses...Oh my!!";
 }
 
-<h2>Create</h2>
+<h2>@ViewBag.Title</h2>
 
 
 @using (Html.BeginForm()) 
@@ -75,6 +75,9 @@
     @Html.ActionLink("Back to List", "Index")
 </div>
 
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
+</div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

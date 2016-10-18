@@ -7,7 +7,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Bottom</h4>
+    <h4>Bottoms</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -55,7 +55,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.photo)
+            <img src="@Url.Content(@Model.photo)" id="picThumbnail" />
         </dd>
 
     </dl>
@@ -64,3 +64,6 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+<div>
+    <a href="~/Home/Index" <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a>
+</div>
